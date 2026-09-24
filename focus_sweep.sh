@@ -36,7 +36,7 @@ cleanup() {
 trap cleanup EXIT INT TERM
 
 get_position() {
-    rget system.focus.position
+    rpoll .system.focus.position
 }
 
 # Drives focus at direction*SPEED until position stops changing (i.e. the
